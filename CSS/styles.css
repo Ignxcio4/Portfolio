@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f5e8; /* Color de fondo cálido */
+    color: #3c3c3c; /* Color de texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f29c77; /* Color de fondo del encabezado */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    color: #fff; /* Color del texto del encabezado */
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de proyectos */
+#proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    max-width: 100%; /* Limitar el ancho máximo */
+    overflow-x: hidden; /* Ocultar cualquier desbordamiento horizontal */
+}
+
+.proyecto {
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    background-color: #f5d5a3; /* Color de fondo de cada proyecto */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: calc(50% - 30px); /* Limitar el ancho máximo para evitar desbordamiento */
+}
+
+
+.proyecto img {
+    max-width: 100%;
+    max-height: 200px; /* Altura máxima deseada */
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+h2 {
+    color: #2d2d2d; /* Color del título del proyecto */
+    font-size: 20px;
+}
+
+p {
+    color: #555; /* Color del texto del proyecto */
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #f29c77; /* Color de fondo del enlace */
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+a:hover {
+    background-color: #d97b58; /* Cambia el color de fondo en el hover */
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px; /* Espacio entre las imágenes de redes sociales */
+}
+
+.social-media img {
+    width: 30px; /* Tamaño de las imágenes de redes sociales */
+    height: 30px; /* Mismo tamaño para mantener la proporción */
+    border-radius: 50%; /* Para que las imágenes sean redondas */
+}
+
+
+footer {
+    background-color: #f29c77; /* Color de fondo del pie de página */
+    padding: 10px;
+    text-align: center;
+    margin-top: auto; /* El footer se pega al fondo */
+}
+
+/* Estilos para el logo en el encabezado */
+header img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la respuesta a pantalla pequeña */
+@media only screen and (max-width: 768px) {
+    .proyecto {
+        width: calc(100% - 30px); /* Para un proyecto por fila en pantallas pequeñas */
+    }
+}
